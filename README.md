@@ -70,6 +70,7 @@ The application is divided into:
 
 ## 📂 Project Structure
 
+```bash
 java-swing-calculator/
 │
 ├── src/
@@ -84,6 +85,7 @@ java-swing-calculator/
 ├── .gitignore
 ├── Calculadora.iml
 └── README.md
+```
 
 
 ### Structure Explanation
