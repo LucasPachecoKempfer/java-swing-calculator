@@ -12,7 +12,7 @@ public class Tela extends JFrame {
     Color cinzaClaro = new Color(212, 212, 210);
     Color cinzaEscuro = new Color(80, 80, 80);
     Color preto = new Color(28, 28, 28);
-    Color laranja = new Color(78, 28, 72);
+    Color purple = new Color(78, 28, 72);
 
     JPanel displayPainel = new JPanel();
     JLabel displayLabel = new JLabel();
@@ -81,7 +81,7 @@ public class Tela extends JFrame {
                 botao.setBackground(cinzaClaro);
                 botao.setForeground(preto);
             } else if (Arrays.asList(rightSymbols).contains(valorBotao)) {
-                botao.setBackground(laranja);
+                botao.setBackground(purple);
                 botao.setForeground(Color.white);
             } else {
                 botao.setBackground(cinzaEscuro);
@@ -142,15 +142,15 @@ public class Tela extends JFrame {
                             displayLabel.setText(removerZeroDecimal((numDisplay)));
                         }
                     } else { // digitos ou "."
-                        if (buttonValue == ".") {
+                        if (buttonValue.equals(".")) {
                             if (!displayLabel.getText().contains(buttonValue)) {
                                 displayLabel.setText(displayLabel.getText() + buttonValue);
                             }
 
                         } else if ("0123456789".contains(buttonValue)) {
-                            if (displayLabel.getText() == "0") {
+                            if (displayLabel.getText().equals("0")) {
                                 displayLabel.setText(buttonValue);
-                            } else {
+                            } else {    
                                 displayLabel.setText(displayLabel.getText() + buttonValue);
                             }
                         } else {
