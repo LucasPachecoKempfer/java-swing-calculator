@@ -70,3 +70,26 @@ The application is divided into:
 
 ## 📂 Project Structure
 
+java-swing-calculator/
+│
+├── src/
+│   ├── assets/
+│   │   └── apple-calculator.png
+│   │
+│   ├── view/
+│   │   └── Tela.java
+│   │
+│   └── Main.java
+│
+├── .gitignore
+├── Calculadora.iml
+└── README.md
+
+
+### Structure Explanation
+
+- `Main.java` → Application entry point.
+- `view/Tela.java` → Main calculator UI and logic.
+- `assets/` → Icons and image resources.
+- `.gitignore` → Git ignored files configuration.
+- `.iml` → IntelliJ project configuration file.
